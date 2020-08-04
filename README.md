@@ -1,7 +1,7 @@
 # Myslidingmenu
 侧滑菜单布局，仿QQ，SlidingMenu,侧滑出菜单效果
 
-示例图片
+示例图片，图片如果不展示请出国即可
 
 ![](https://github.com/842869709/TestMyslidingmenu/blob/master/2020.07.31.15.49.20_2.gif)
 
