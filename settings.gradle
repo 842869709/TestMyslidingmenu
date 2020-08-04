@@ -1,0 +1,3 @@
+include ':myslidingmenu'
+include ':app'
+rootProject.name = "TestMyslidingmenu"
