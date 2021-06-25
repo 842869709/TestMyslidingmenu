@@ -147,4 +147,5 @@ public class TestSlidingMenuActivity extends Activity {
 }
 
 ```
+## v1.0.1增加纵向滑动控件MySlidingMenuVertical
 ## v1.0.0初始化提交
