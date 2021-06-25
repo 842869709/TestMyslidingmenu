@@ -1,31 +1,26 @@
 package com.yangxuydong.testmyslidingmenu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import androidx.appcompat.app.AppCompatActivity;
+import com.yangxuydong.myslidingmenu.MySlidingMenuVertical;
 
-import com.yangxuydong.myslidingmenu.MySlidingMenu;
+public class TestVerticalActivity extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-
-    //测试提交
-    private MySlidingMenu msm;
+    private MySlidingMenuVertical msmv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_test_v);
 
         initView();
     }
 
     private void initView() {
-        msm = findViewById(R.id.msm);
-        msm.setRightDown(true);
-        msm.setOnStateChangeListening(new MySlidingMenu.OnStateChangeListening() {
+        msmv = findViewById(R.id.msmv);
+        msmv.setOnStateChangeListening(new MySlidingMenuVertical.OnStateChangeListening() {
             @Override
             public void OnStateChange(boolean isExpand) {
                 Log.i("test",isExpand?"打开":"关闭");
@@ -40,15 +35,10 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.bt_open).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                msm.setOpen();
+                msmv.setOpen();
             }
         });
-        findViewById(R.id.bt_vertical).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,TestVerticalActivity.class));
-            }
-        });
+
 
     }
 }
