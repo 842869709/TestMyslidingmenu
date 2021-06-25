@@ -7,14 +7,20 @@
     tools:context=".MainActivity"
     android:background="@android:color/holo_red_dark">
 
-    <com.yangxuydong.myslidingmenu.MySlidingMenuVertical
-        android:id="@+id/msmv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <include layout="@layout/menu_t"/>
-        <include layout="@layout/menu_b"/>
 
-    </com.yangxuydong.myslidingmenu.MySlidingMenuVertical>
+
+        <com.yangxuydong.myslidingmenu.MySlidingMenuVertical
+            android:id="@+id/msmv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/menu_t"/>
+            <include layout="@layout/menu_b"/>
+
+        </com.yangxuydong.myslidingmenu.MySlidingMenuVertical>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

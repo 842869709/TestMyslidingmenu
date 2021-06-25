@@ -48,7 +48,7 @@ public class MySlidingMenuVertical extends ViewGroup {
     //排版
     @Override
     protected void onLayout(boolean b, int i, int i1, int i2, int i3) {
-        top.layout(i, i1, i2, i3);
+        top.layout(i, 0, i2, i3);
         bottom.layout(i, topHeight, i2, i3+topHeight);
     }
 
